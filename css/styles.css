@@ -3,6 +3,7 @@ body {
   background: rgba(0, 98, 179, 0.77);
   font-family: Tahoma;
   color: hsl(230, 44%, 99%);
+  overflow: hidden;
 }
 
 form {
@@ -61,4 +62,11 @@ input[type="submit"] {
   background-color: green;
   min-width: 300px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: scroll;
+    scroll-padding: 40px;
+  }
 }
